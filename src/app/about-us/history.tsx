@@ -11,8 +11,8 @@ const History = ({ dictionary }: Props) => {
     triggerOnce: true,
     threshold: 0.1,
   });
-  const img1 = "/about-us/img-1.png";
-  const img2 = "/about-us/img-2.png";
+  const img1 = `${import.meta.env.BASE_URL}about-us/img-1.png`;
+  const img2 = `${import.meta.env.BASE_URL}about-us/img-2.png`;
   const clients = Array(4).fill(0);
   return (
     <div className="flex w-full pb-[50px] justify-center" ref={historyRef}>
@@ -78,13 +78,15 @@ const History = ({ dictionary }: Props) => {
                 {clients?.map((_, i) => (
                   <img
                     key={i}
-                    src={`/about-us/clients/${i + 1}.png`}
+                    src={`${import.meta.env.BASE_URL}about-us/clients/${
+                      i + 1
+                    }.png`}
                     className="w-[20%] sm:w-[54.51px] aspect-[1/1] ml-[-3%] sm:ml-[-12px] hover:scale-105 duration-300 cursor-pointer"
                   />
                 ))}
                 <div className="w-[20%] sm:w-[54.51px] aspect-[1/1] hover:scale-105 duration-300 cursor-pointer ml-[-3%] sm:ml-[-12px] flex items-center justify-center bg-primary rounded-full">
                   <img
-                    src="/about-us/clients/plus.svg"
+                    src={`${import.meta.env.BASE_URL}about-us/clients/plus.svg`}
                     alt="plus"
                     className="w-[50%] sm:w-[25.65px] aspect-[1/1]"
                   />

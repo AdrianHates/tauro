@@ -95,7 +95,7 @@ const Carousel3D = ({ items }: Props) => {
           }}
         >
           <img
-            src="/direction-right.svg"
+            src={`${import.meta.env.BASE_URL}direction-right.svg`}
             className="sm:w-6 w-[13.2px] h-[13.2px] sm:h-6 rotate-180"
           />
         </button>
@@ -119,7 +119,7 @@ const Carousel3D = ({ items }: Props) => {
           }}
         >
           <img
-            src="/direction-right.svg"
+            src={`${import.meta.env.BASE_URL}direction-right.svg`}
             className="sm:w-6 w-[13.2px] h-[13.2px] sm:h-6"
           />
         </button>

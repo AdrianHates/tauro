@@ -52,7 +52,6 @@ const Calculator = ({ dictionary, id, target }: Props) => {
       }
 
       const data = await response.json();
-      console.log(data);
 
       setInstallmentValue(data.credit_quota?.toFixed(2) || "0.00");
     } catch (error) {

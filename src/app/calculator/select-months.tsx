@@ -82,7 +82,7 @@ const MonthSelect = ({
           <div className="flex justify-between w-full">
             {months}
             <img
-              src="/selectToggle.svg"
+              src={`${import.meta.env.BASE_URL}selectToggle.svg`}
               alt="select-toggle"
               className="w-[22.77px] aspect-[1]"
             />

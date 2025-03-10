@@ -86,7 +86,10 @@ function App() {
                   toggleLanguage();
                 }}
               >
-                <img src="/world.svg" className="w-5 h-5" />
+                <img
+                  src={`${import.meta.env.BASE_URL}world.svg`}
+                  className="w-5 h-5"
+                />
                 <p className="w-8 uppercase font-normal">
                   {language === "es" ? "en" : "es"}
                 </p>

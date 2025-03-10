@@ -13,8 +13,8 @@ const Credits = ({ dictionary, id }: Props) => {
     triggerOnce: true,
     threshold: 0.1,
   });
-  const img1 = "/credits/img-1.png";
-  const img2 = "/credits/img-2.png";
+  const img1 = `${import.meta.env.BASE_URL}credits/img-1.png`;
+  const img2 = `${import.meta.env.BASE_URL}credits/img-2.png`;
   return (
     <section
       className="flex justify-center bg-secondary"
@@ -33,7 +33,7 @@ const Credits = ({ dictionary, id }: Props) => {
                 <div className="flex flex-col gap-[5px]" key={i}>
                   <div className="flex gap-2 items-center ml-0.5 lg:min-w-[60ch]">
                     <img
-                      src="/check.svg"
+                      src={`${import.meta.env.BASE_URL}check.svg`}
                       alt="icon-check"
                       className="w-[16.67px] sm:w-5 h-[16.67px] sm:h-5"
                     />
@@ -89,7 +89,7 @@ const Credits = ({ dictionary, id }: Props) => {
             </h6>
             <div className="flex gap-1">
               <img
-                src="/arrow.svg"
+                src={`${import.meta.env.BASE_URL}arrow.svg`}
                 alt="arrow"
                 className="w-3 lg:w-4 h-3 lg:h-4"
               />
