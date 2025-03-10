@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title-style {
+  @apply text-[36px] sm:text-[64px] leading-[54px] sm:leading-[96px] tracking-[-0.29px] sm:tracking-[-0.43px] text-primary text-opacity-[27%] font-extrabold uppercase;
+}
+
+.button-form {
+  @apply text-base h-[50px] text-secondary bg-primary rounded-[7.59px] font-semibold px-[60.73px] py-[7.59px] hover:brightness-125 hover:scale-105 duration-300;
+}

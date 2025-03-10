@@ -1,0 +1,26 @@
+.modal-navbar {
+  animation: FadeInFromLeft 0.5s ease-out forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: FadeOutFromLeft 0.3s ease forwards;
+}
+
+@keyframes FadeInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes FadeOutFromLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
